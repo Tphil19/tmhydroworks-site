@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T&M HydroWorks</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; color: #1f2937; }
+    header { background-color: #1f2937; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('logo-bg-placeholder.jpg') center/cover no-repeat; padding: 100px 40px; text-align: center; color: #fff; background-color: #111827; }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.25rem; margin-bottom: 30px; }
+    .hero button { background-color: #10b981; color: #fff; border: none; padding: 15px 25px; font-size: 1rem; margin: 0 10px; cursor: pointer; border-radius: 5px; }
+    .section { padding: 60px 40px; text-align: center; background-color: #fff; }
+    .section:nth-child(even) { background-color: #e5e7eb; }
+    .services, .gallery-grid, .testimonials, .about-grid { display: flex; justify-content: space-around; flex-wrap: wrap; }
+    .service-box, .gallery-item, .testimonial-box, .about-box { width: 300px; margin: 20px; padding: 20px; background: #ffffff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .footer { background-color: #1f2937; color: #fff; padding: 40px; text-align: center; }
+    form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+    input, textarea, select { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button.submit-btn { background-color: #3b82f6; color: #fff; padding: 12px; border: none; cursor: pointer; border-radius: 5px; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">T&M HydroWorks</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Dirt, Grease or Grime — We’ll Make It Shine.</h1>
+    <p>Pressure Washing • Junk Removal • Rig & Equipment Cleaning • Fleet Services</p>
+    <button>📞 Call Us Today</button>
+    <button>📋 Get a Free Quote</button>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About T&M HydroWorks</h2>
+    <div class="about-grid">
+      <div class="about-box">
+        <p>Built by hardworking professionals who know grime inside and out, T&M HydroWorks brings serious cleaning power to every job—residential or industrial. We’re equipped, insured, and ready to shine.</p>
+      </div>
+      <div class="about-box">
+        <p>We serve homeowners, construction crews, trucking companies, and oilfield operators with the same no-nonsense approach: get it clean, get it right, and get it done fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>We Tackle the Toughest Jobs</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Residential Pressure Washing</h3>
+        <p>From driveways to siding, we’ll blast away years of dirt.</p>
+      </div>
+      <div class="service-box">
+        <h3>Junk Removal & Hauling</h3>
+        <p>We clear out the mess fast—furniture, appliances, debris, you name it.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fleet & Equipment Cleaning</h3>
+        <p>Oil rigs, trucks, and heavy machinery – we’ve got the muscle and tools.</p>
+      </div>
+      <div class="service-box">
+        <h3>Oilfield Rig Washing</h3>
+        <p>Onsite rig cleaning with industrial-grade pressure and runoff control.</p>
+      </div>
+      <div class="service-box">
+        <h3>Heavy Equipment Detailing</h3>
+        <p>Interior & exterior cleanups for dozers, backhoes, skids, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Proof of Power</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">[Before/After Image 1]</div>
+      <div class="gallery-item">[Before/After Image 2]</div>
+      <div class="gallery-item">[Before/After Image 3]</div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial-box">
+        <p>“T&M HydroWorks turned my filthy fleet into showroom trucks. Fast, professional, and worth every penny.” – J. Martinez</p>
+      </div>
+      <div class="testimonial-box">
+        <p>“Booked them for junk removal and a driveway wash. Unreal results!” – K. Simmons</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Ready for the Clean You Deserve?</h2>
+    <p>📞 Call or fill out our quick form below to get started.</p>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <select name="service">
+        <option value="">Select Service</option>
+        <option value="Pressure Washing">Pressure Washing</option>
+        <option value="Junk Removal">Junk Removal</option>
+        <option value="Fleet Cleaning">Fleet Cleaning</option>
+        <option value="Rig Washing">Rig Washing</option>
+        <option value="Equipment Detailing">Equipment Detailing</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your job..." rows="5"></textarea>
+      <button class="submit-btn" type="submit">Get a Free Quote</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 T&M HydroWorks. All Rights Reserved.</p>
+    <p>Serving [Your City & Region] | Connect with us on Facebook & Instagram</p>
+  </footer>
+</body>
+</html>
